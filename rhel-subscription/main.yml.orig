@@ -16,7 +16,7 @@
 
     - name: RHEL7 subscription with Redhat Satellite
       command: >
-        curl -sS --insecure 'https://a1sat1.ux.corp.local/register?activation_keys=RHEL7-NONPROD&force=true&lifecycle_environment_id=3&location_id=2&organization_id=1&update_packages=false' -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJpYXQiOjE2OTE3NjkyMjYsImp0aSI6IjM3ODc0ZmNjYTkyZDhkOThmYjA0ZDk1MmM3ZDAxOWU1ZDhkZWQ4MjQ4NDU4NWE4ZjdlNGZjMWFhZGM4NDJkNDYiLCJzY29wZSI6InJlZ2lzdHJhdGlvbiNnbG9iYWwgcmVnaXN0cmF0aW9uI2hvc3QifQ.t3LPAAQGtBJlEijICjzkkoXpz6o-S8pCDXCtF9ZDzas' | bash
+        curl -sS --insecure '' -H 'Authorization: Bearer ' | bash
       register: rhel7_output
       when: is_rhel7_extension
 
@@ -27,7 +27,7 @@
 
     - name: RHEL8 subscription with Redhat Satellite
       command: >
-        curl -sS --insecure 'https://a1sat1.ux.corp.local/register?activation_keys=RHEL8-NONPROD&force=true&lifecycle_environment_id=3&location_id=2&organization_id=1&update_packages=false' -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJpYXQiOjE2OTI2NDA0OTAsImp0aSI6IjdmMGFkOTg2YjYyNDIzOGMwM2U0N2YwOWM2NzhkMjE3ZDgyNTliYTg3MWQ3ZDI5ZDgyNDQyNjlkMjA0NTQ0MGEiLCJzY29wZSI6InJlZ2lzdHJhdGlvbiNnbG9iYWwgcmVnaXN0cmF0aW9uI2hvc3QifQ.SnBJ7-FK9pGjvUdKMp3HhHLUNjkYP3F4DjWZsPFhz5s' | bash
+        curl -sS --insecure '' -H 'Authorization: Bearer ' | bash
       register: rhel8_output
       when: is_rhel8
 
@@ -38,7 +38,7 @@
 
     - name: RHEL9 subscription with Redhat Satellite
       command: >
-        curl -sS --insecure 'https://a1sat1.ux.corp.local/register?activation_keys=RHEL9-NONPROD&force=true&lifecycle_environment_id=3&location_id=2&organization_id=1&update_packages=false' -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJpYXQiOjE2OTI2NDA1NTgsImp0aSI6IjI3YzcwYzdmMGFkNzU0YzNhZWFiM2Q4ZDU0ZTZkMDIzZjA2ZWFlODJmMWQwOWI1MzJhNjZiNmRjMTczNDA0MmEiLCJzY29wZSI6InJlZ2lzdHJhdGlvbiNnbG9iYWwgcmVnaXN0cmF0aW9uI2hvc3QifQ.H86UFtdskiL65mOh4OKe6W-9yuPGZaVRM6Hd6DbXygM' | bash
+        curl -sS --insecure '' -H 'Authorization: Bearer ' | bash
       register: rhel9_output
       when: is_rhel9
 
