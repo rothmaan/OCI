@@ -16,7 +16,7 @@
 
     - name: RHEL7 subscription with Redhat Satellite
       command: >
-        curl -sS --insecure 'https://a1satp1.ux.corp.local:9090/register?activation_keys=RHEL7-PEOPROD&force=true&lifecycle_environment_id=2&location_id=3&organization_id=1&update_packages=false' -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJpYXQiOjE2OTI2Mzk5NjAsImp0aSI6IjJkYmZkMmUxYTQ3ZDVkMjFjZGNjOTgwNGE3MWM2N2E3ODEzOTUwYjljYTk5ZmVlYzFmNTA1ZTVhYTkwN2M4ZTEiLCJzY29wZSI6InJlZ2lzdHJhdGlvbiNnbG9iYWwgcmVnaXN0cmF0aW9uI2hvc3QifQ.QmGiBd4OUJF2BX4OgeE8f8X_VKfY6FSj1-eJ7DGn844' | bash
+        curl -sS --insecure ' -H 'Authorization: Bearer ' | bash
       register: rhel7_output
       when: is_rhel7_extension
 
@@ -27,7 +27,7 @@
 
     - name: RHEL8 subscription with Redhat Satellite
       command: >
-        curl -sS --insecure 'https://a1satp1.ux.corp.local:9090/register?activation_keys=RHEL8-PEOPROD&force=true&lifecycle_environment_id=2&location_id=3&organization_id=1&update_packages=false' -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJpYXQiOjE2OTI2NDAyNDksImp0aSI6IjdhOWUxYTQxMGIyMGZjZjczNzEzYTk2NjNhYzNjYzBkYmNhYzZkM2IxYmYwOTlmYjIyZDA4MDM4OTJhYzUwY2QiLCJzY29wZSI6InJlZ2lzdHJhdGlvbiNnbG9iYWwgcmVnaXN0cmF0aW9uI2hvc3QifQ.lDUkbfZL6VvgWHVdgUkBYg967teWWrd1VTrpahdL3X8' | bash
+        curl -sS --insecure '' -H 'Authorization: Bearer ' | bash
       register: rhel8_output
       when: is_rhel8
 
@@ -38,7 +38,7 @@
 
     - name: RHEL9 subscription with Redhat Satellite
       command: >
-        curl -sS --insecure 'https://a1satp1.ux.corp.local:9090/register?activation_keys=RHEL9-PEOPROD&force=true&lifecycle_environment_id=2&location_id=3&organization_id=1&update_packages=false' -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJpYXQiOjE2OTI2NDAzNDUsImp0aSI6IjJiMWNiYWQ1NWI1MGM2YjY5ZmJmN2M5ZjY3MTc5YTUwZDljMjI1NmYzODkwNmQ3YzJlZDg5ZTVhY2I0ZTY0MjgiLCJzY29wZSI6InJlZ2lzdHJhdGlvbiNnbG9iYWwgcmVnaXN0cmF0aW9uI2hvc3QifQ.0yuyWxPK67MHnlFjCyVUneP8ZkFpxSLjIyQA1THTSUI' | bash
+        curl -sS --insecure '' -H 'Authorization: Bearer ' | bash
       register: rhel9_output
       when: is_rhel9
 
